@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minha Galeria</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Minha Galeria de Imagens</h1>
+      <p>Um projeto DevOps do zero à nuvem</p>
+    </header>
+
+    <main>
+      <div class="upload-container">
+        <h2>Faça o upload de uma nova imagem</h2>
+        <form id="uploadForm">
+          <input
+            type="file"
+            id="imageInput"
+            name="image"
+            accept="image/*"
+            required
+          />
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+
+      <div class="gallery-container">
+        <h2>Galeria</h2>
+        <div id="gallery" class="gallery">
+          <!-- As imagens aparecerão aqui -->
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
